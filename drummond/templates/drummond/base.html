@@ -1,0 +1,74 @@
+{% load static %}
+
+{% block title %}
+<title>Grupo Educacional Drummond</title>
+{% endblock %}
+
+{% block css %}
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<meta content="" name="descriptison">
+<meta content="" name="keywords">
+
+<!-- Favicons -->
+<link href="static/img/logo-pequenol.png" rel="icon">
+<link href="static/img/logo-pequenol.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
+<link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="static/css/style.css" rel="stylesheet">
+{% endblock css %}
+ 
+<body>
+{% block navbar %}
+{% include 'drummond/navbar.html' %}
+{% endblock navbar%}
+ 
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+{% include 'drummond/footer.html' %}
+{% endblock footer%}
+
+{% block js %}
+ <!-- Vendor JS Files -->
+ <script src="static/vendor/jquery/jquery.min.js"></script>
+ <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+ <script src="static/vendor/php-email-form/validate.js"></script>
+ <script src="static/vendor/jquery-sticky/jquery.sticky.js"></script>
+ <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+ <script src="static/vendor/waypoints/jquery.waypoints.min.js"></script>
+ <script src="static/vendor/counterup/counterup.min.js"></script>
+ <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="static/vendor/venobox/venobox.min.js"></script>
+ <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "8dba7179-9b59-4c90-a28b-f36a28e78539", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "067a6b2a-7685-4bfa-8575-36c50487c825", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+ <!-- Template Main JS File -->
+ <script src="static/js/main.js"></script>
+{% endblock js %} 
+</body>
+ 
